@@ -201,40 +201,49 @@ ul{
 
 /*Sección de Formación académica*/
 
+
 .formacion{
+    width: auto;/**/
+    height: auto;/**/
     background-color: #005452;
+    padding-bottom: 10%;
     display: flex;
+    /*flex-wrap: wrap;*/
     flex-direction: column;
 }
 
 .formacion__titulo{
-    padding-bottom:  32px;
     color: #e4e4e5;
+    padding-bottom: 3%;
     text-align: center;
 }
 
 .formacion__lista{
+    width: 75%;
+    height: 286px;
+    margin-left: 12.3%;
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 0.7%;
 }
 
 .formacion__elemento{
-    width: 25%;/*368*/
-    height: 23%;/*347*/
-    background-color: #ffffff;
-    font-size: 1rem;
-    gap: 50px;
+    width: 368%;/*25*/
+    height: 96%;
+    background-color: white;
+    padding-bottom: 1%;
 }
 
 .formacion__icono{
-    width: 50%;/*368*/
-    height: 50%;/*347*/
+    width: 50%;
+    height: 50%;
     padding: 20% 25% 25% 25%;
 }
 
 .formacion__texto{
-    padding: 15px 0px 22px 0px;
+    width: 100%;
+    height: 20%;
+    font-size: 1rem;
     background-color: #005452;
 }
 
@@ -246,7 +255,7 @@ ul{
 .formacion__detalle{
     font-size: 1rem;
     color: #e4e4e5;
-}
+}*/
 
 /*    Sección de Proyectos    */
 
@@ -448,15 +457,26 @@ ul{
         padding-bottom: 10%;
     }
 
+    .formacion__lista{
+        width: 90%;
+        height: 118px;
+        margin-left: 5%;
+        gap: 2%;
+    }
+
     .formacion__elemento{
-        width: 29%;/*368*/
-        height: 118px;/*347*/
+        width: 40%;/*368*/
+        height: 94.5%;/*347*/
     }
 
     .formacion__icono{
         width: 50%;/*368*/
         height: 50%;/*347*/
-        padding: 10% 25% 10% 25%;
+        padding: 13% 25% 20% 25%;
+    }
+
+    .formacion__texto{
+        background-color: transparent;
     }
 
     .formacion__nombre{
