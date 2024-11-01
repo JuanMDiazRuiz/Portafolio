@@ -28,7 +28,7 @@ a:hover{
     align-items: center;
     justify-content: center /*space-around*/;
     box-sizing: border-box;
-    gap: 39%;
+    gap: 25%;
 }
 
 .cabecera__intro{
