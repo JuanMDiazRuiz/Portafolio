@@ -21,13 +21,14 @@ a:hover{
 /*  Menú  */
 
 .cabecera{
+    width: 100%;
     padding-top: 3%;
     display: flex;
     background-color: #e4e4e5;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center /*space-around*/;
     box-sizing: border-box;
-    gap: 8%;
+    gap: 24.5%;
 }
 
 .cabecera__intro{
@@ -317,7 +318,7 @@ ul{
 .contacto{
     background-color: #005452;
     display: flex;
-    gap: 16px;
+    gap: 5%;
     justify-content: center;
 }
 
@@ -534,6 +535,122 @@ ul{
         width: 20%;
         height: 48px;
     }
+
+}
+
+
+/*Responsive para table width max (360)*/
+
+
+@media (max-width: 360px){
+
+    section{
+        padding: 5% 0% 5% 0%;
+    }
+
+    .cabecera{
+        background-color: red;
+    }
+
+    .navegacion__lista{
+        display: none;
+    }
+
+    .presentacion{
+        flex-direction: column-reverse;
+    }
+
+    .presentacion__contenedor{
+        width: 90%;
+    }
+
+    .presentacion__titulo{
+        font-size: 1.375rem;
+    }
+
+    .presentacion__subtitulo{
+        font-size: 0.875rem;
+    }
+
+    .redes{
+        padding-top: 3%;
+        gap: 7%;
+    }
+
+    .redes__img{
+        font-size: 0.875rem;
+    }
+
+    .presentacion__foto{
+        margin: 0% 70% 3% 0%;
+    }
+
+    .habilidades__elemento{
+        width: 45%;
+        margin-bottom: 4%;
+    }
+
+    .habilidades__icono{
+        padding-top: 35%;
+    }
+
+    .habilidades__nombre{
+        padding-left: 5%;
+    }
+
+    .aficiones__elemento{
+        width: 45%;
+        margin-bottom: 4%;
+    }
+
+    .aficiones__icono{
+        padding-top: 35%;
+    }
+
+    .aficiones__nombre{
+        padding-left: 5%;
+    }
+
+    .formacion__lista{
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    .formacion__elemento{
+        width: 95%;
+        height: auto;
+        margin-bottom: 15%;
+    }
+
+    .formacion__icono{
+        margin-top: 5%;
+    }
+
+    .formacion__texto{
+        background-color: #005452;
+        padding-bottom: 5%;
+        padding-top: 3%;
+    }
+
+    .proyectos{
+        padding-bottom: 10%;
+    }
+
+    .proyecto__boton{
+        width: 30%;
+        font-size: 0.875rem;
+        margin-top: 2%;
+    }
+
+    .contacto{
+        padding-bottom: 7%;
+    }
+
+    .contacto__boton{
+        width: 50%;
+        margin-top: -3%;
+    }
+
 
 
 }
