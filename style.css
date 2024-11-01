@@ -28,7 +28,7 @@ a:hover{
     align-items: center;
     justify-content: center /*space-around*/;
     box-sizing: border-box;
-    gap: 24.5%;
+    gap: 39%;
 }
 
 .cabecera__intro{
@@ -93,7 +93,7 @@ ul{
 .redes{
     margin-bottom: 6%;
     display: flex;
-    gap: 70px;
+    gap: 10%;
 }
 
 /* Presentacion sobre Mi*/
@@ -408,6 +408,11 @@ ul{
 
     .presentacion__subtitulo{
         font-size: 1rem;
+    }
+
+    .redes{
+        gap: 7%;
+        justify-content: space-between;
     }
 
     .sobre-mi__cuadro{
