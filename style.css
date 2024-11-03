@@ -17,47 +17,59 @@ a:hover{
     color: #028785;
 }
 
+ul{
+    list-style: none;
+    text-decoration: none;
+}
+
 
 /*  Menú  */
 
 .cabecera{
     width: 100%;
-    padding-top: 3%;
-    display: flex;
+    padding-top: 1%;
     background-color: #e4e4e5;
+    display: flex;
     align-items: center;
-    justify-content: center /*space-around*/;
-    box-sizing: border-box;
-    gap: 25%;
+    justify-content: center;
+}
+
+.cabecera__principal{
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5%;
 }
 
 .cabecera__intro{
-    width: 14%;
+    width: 30%;
     display: flex;
     align-items: center;
     gap: 4%;
 }
 
 .cabecera__intro__titulo{
+    width: 100%;
     color: #005452;
     font-size: 1rem;
 }
 
+.navegacion{
+    width: 70%;
+}
+
 .navegacion__lista{
-    margin-left: -34%;
     font-size: 1rem;
-    display: flex;
     background-color: #e4e4e5;
-    box-sizing: border-box;
-    width: 135%;
-    gap: 5%;
+    display: flex;
+    justify-content: space-between;
+    gap: 3%; 
 }
 
-ul{
-    list-style: none;
-    text-decoration: none;
+.navegacion__lista li:nth-child(6) {
+    font-weight: bold;
 }
-
 
 /* Sección de Presentación */
 
@@ -124,12 +136,8 @@ ul{
 
 .habilidades{
     background-color: #e4e4e5;
-    width: auto;/**/
-    height: auto;/**/
-    /*padding: 20px 0px 20px 0px;*/
-    /*display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;*/
+    width: auto;
+    height: auto;
 }
 
 .habilidades__titulo{
@@ -164,12 +172,9 @@ ul{
 
 .aficiones{
     background-color: #e4e4e5;
-    width: auto;/**/
-    height: auto;/**/
-    /*padding: 20px 0px 20px 0px;*/
-    /*display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;*/
+    width: auto;
+    height: auto;
+    padding-top: 0%;
 }
 
 .aficiones__titulo{
@@ -202,14 +207,12 @@ ul{
 
 /*Sección de Formación académica*/
 
-
 .formacion{
-    width: auto;/**/
-    height: auto;/**/
+    width: auto;
+    height: auto;
     background-color: #005452;
     padding-bottom: 10%;
     display: flex;
-    /*flex-wrap: wrap;*/
     flex-direction: column;
 }
 
@@ -229,7 +232,7 @@ ul{
 }
 
 .formacion__elemento{
-    width: 368%;/*25*/
+    width: 368%;
     height: 96%;
     background-color: white;
     padding-bottom: 1%;
@@ -242,7 +245,7 @@ ul{
 }
 
 .formacion__texto{
-    width: 100%;
+    width: auto;
     height: 20%;
     font-size: 1rem;
     background-color: #005452;
@@ -256,7 +259,7 @@ ul{
 .formacion__detalle{
     font-size: 1rem;
     color: #e4e4e5;
-}*/
+}
 
 /*    Sección de Proyectos    */
 
@@ -348,10 +351,8 @@ ul{
 .contacto__formulario{
     display: flex;
     flex-direction: column;
-    gap: 32px;
-    
+    gap: 32px;   
 }
-
 
 .contacto__campo{
     width: 100%;
@@ -367,7 +368,7 @@ ul{
 .contacto__boton{
     width: 25%;
     height: 51px;
-    background-color: #e4e4e5;/*#028785*/
+    background-color: #e4e4e5;
     color: #005452;
 }
 
@@ -379,17 +380,46 @@ ul{
 /* Pie de pagina */
 
 .pie__pagina{
+    font-size: 1rem;
     background-color: #e4e4e5;
     color: #005452;
     text-align: center;
     padding: 1% 0% 1% 0%;
 }
 
+
 /*Responsive para table width max (768)*/
 
 @media (max-width: 768px){
 
 
+    /* secion Menú  (768)*/
+
+
+    .cabecera__principal{
+        width: 90%;
+        justify-content: space-between;
+        gap: 10%;
+    }
+
+    .cabecera__intro{
+        width: 100%;
+    }
+
+    .navegacion__lista{
+        width: 100%;
+    }
+
+    .navegacion__lista li {
+        display: none;
+    }
+
+    .navegacion__lista li:nth-child(6) {
+        display: list-item;
+        font-weight: bold;
+    }
+
+    /* secion presentacion (768) */
 
     .presentacion{
         display: flex;
@@ -415,6 +445,8 @@ ul{
         justify-content: space-between;
     }
 
+    /* secion sobre Mi (768)*/
+
     .sobre-mi__cuadro{
         width: 90%;
     }
@@ -427,6 +459,8 @@ ul{
         font-size: 0.875rem;
     }
 
+    /* secion de habilidades (768) */
+
     .habilidades__lista{
         flex-wrap: wrap;
         gap: 10px;
@@ -438,8 +472,14 @@ ul{
     }
 
     .habilidades__icono{
-        padding: 20% 0% 0% 5%;
+        padding: 30% 0% 0% 5%;
     }
+
+    .habilidades__nombre{
+        padding-left: 5%;
+    }
+
+    /* secion de aficiones (768) */
 
     .aficiones__lista{
         flex-wrap: wrap;
@@ -453,11 +493,10 @@ ul{
     }
 
     .aficiones__icono{
-        padding: 20% 0% 0% 5%;
+        padding: 25% 0% 0% 5%;
     }
 
-    /*Sección de Formación académica*/
-
+    /* Sección de Formación académica (768) */
 
     .formacion{
         padding-bottom: 10%;
@@ -471,13 +510,13 @@ ul{
     }
 
     .formacion__elemento{
-        width: 40%;/*368*/
-        height: 94.5%;/*347*/
+        width: 40%;
+        height: 94.5%;
     }
 
     .formacion__icono{
-        width: 50%;/*368*/
-        height: 50%;/*347*/
+        width: 50%;
+        height: 50%;
         padding: 13% 25% 20% 25%;
     }
 
@@ -492,6 +531,8 @@ ul{
     .formacion__detalle{
         font-size: 0.875rem;
     }
+
+    /* Sección de Proyectos  (768) */
 
     .proyectos__contenedor{
         flex-direction: column;
@@ -528,6 +569,8 @@ ul{
         flex-direction: column-reverse;
     }
 
+    /* Sección de Contacto (768) */
+
     .contacto__imagen{
         display: none;
     }
@@ -549,17 +592,27 @@ ul{
 
 @media (max-width: 360px){
 
+
+    /* Secion menu (360) */
+
     section{
         padding: 5% 0% 5% 0%;
     }
 
-    .cabecera{
-        background-color: red;
+    .cabecera__principal{
+        width: 95%;
     }
 
-    .navegacion__lista{
-        display: none;
+    .cabecera__intro{
+        width: 100%;
     }
+
+    .navegacion__lista li:nth-child(6) {
+        display: list-item;
+        font-weight: bold;
+    }
+
+    /* Secion presentacion (360) */
 
     .presentacion{
         flex-direction: column-reverse;
@@ -590,6 +643,8 @@ ul{
         margin: 0% 70% 3% 0%;
     }
 
+    /* secion de habilidades (360) */
+
     .habilidades__elemento{
         width: 45%;
         margin-bottom: 4%;
@@ -603,6 +658,8 @@ ul{
         padding-left: 5%;
     }
 
+    /* secion de aficiones (360) */
+
     .aficiones__elemento{
         width: 45%;
         margin-bottom: 4%;
@@ -615,6 +672,8 @@ ul{
     .aficiones__nombre{
         padding-left: 5%;
     }
+
+    /* sección de formación académica (360) */
 
     .formacion__lista{
         height: auto;
@@ -637,6 +696,8 @@ ul{
         padding-top: 3%;
     }
 
+    /* Sección de Proyectos  (360) */
+
     .proyectos{
         padding-bottom: 10%;
     }
@@ -646,6 +707,8 @@ ul{
         font-size: 0.875rem;
         margin-top: 2%;
     }
+
+    /* Sección de Contacto (360) */
 
     .contacto{
         padding-bottom: 7%;
