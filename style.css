@@ -2,6 +2,7 @@
     border: 0px;
     padding: 0px;
     margin: 0px;
+    box-sizing: border-box;
 }
 
 section{
@@ -398,16 +399,22 @@ ul{
 
     .cabecera__principal{
         width: 90%;
-        justify-content: space-between;
-        gap: 10%;
+
     }
 
     .cabecera__intro{
-        width: 100%;
+        width: 200px;
+    }
+
+    .navegacion{
+        width: 65px;
+        height: 30px;
+        margin-top: 3%;
     }
 
     .navegacion__lista{
         width: 100%;
+        font-size: 1rem;
     }
 
     .navegacion__lista li {
@@ -599,12 +606,27 @@ ul{
         padding: 5% 0% 5% 0%;
     }
 
+    .cabecera{
+        padding-top: 5%;
+    }
+
     .cabecera__principal{
-        width: 95%;
+        width: 94%;  
     }
 
     .cabecera__intro{
-        width: 100%;
+        width: 57%;
+    }
+
+    .navegacion{
+        width: 62px;
+        margin-top: 2%;
+        align-items: center;
+    }
+
+    .navegacion__lista{
+        width: 62px;
+        margin-top: 5%;
     }
 
     .navegacion__lista li:nth-child(6) {
