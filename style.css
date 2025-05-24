@@ -157,6 +157,7 @@ ul{
 .habilidades__elemento{
     background-color: white;
     width: 12%;
+    height: auto;
     padding-bottom: 1%;
 }
 
@@ -175,7 +176,6 @@ ul{
     background-color: #e4e4e5;
     width: auto;
     height: auto;
-    padding-top: 0%;
 }
 
 .aficiones__titulo{
@@ -193,17 +193,17 @@ ul{
 .aficiones__elemento{
     background-color: white;
     width: 12%;
+    height: auto;
     padding-bottom: 1%;
 }
 
 .aficiones__icono{
-    width: 15%;
-    padding: 55% 0% 0% 5%;
+    padding: 55% 0% 0% 10%;
 }
 
 .aficiones__nombre{
     font-size: 1rem;
-    padding-left: 5%;
+    padding-left: 10%;
 }
 
 /*Sección de Formación académica*/
@@ -240,8 +240,8 @@ ul{
 }
 
 .formacion__icono{
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: 100%;
     padding: 20% 25% 25% 25%;
 }
 
@@ -254,6 +254,7 @@ ul{
 
 .formacion__nombre{
     font-size: 1.375rem;
+    padding-top: 2%;
     color: #e4e4e5;
 }
 
@@ -319,22 +320,124 @@ ul{
 
 /*    Sección de Contacto    */
 
+
 .contacto{
+    width: 100%;
+    height: 100%;
     background-color: #005452;
     display: flex;
-    gap: 5%;
     justify-content: center;
 }
 
+
+.b{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    gap: 2%;
+    /*background-color: red;*/
+}
+
+.prueba{
+    /*background-color: blue;*/
+    width: 40%;
+    height: 100%;
+    
+}
+
 .contacto__imagen{
-    width: 30%;
+    width: 100%;
+    height: 100%;
+}
+
+.contacto__titulo{
+    color: #e4e4e5;
+    font-size: 2rem;
+}
+
+.contacto__texto{
+    color: #e4e4e5;
+    font-size: 1rem;
+    padding: 1% 0% 3% 0%/*5px 0px 24px 0px*/;
+}
+
+.contacto__cuadro{
+    width: 60%;
+    height: auto;
+    /*background-color: aqua;*/
+}
+
+
+
+.contacto__formulario{
+    width: 100%;
+    height: 82%;
+    /*background-color: pink;*/
+    display: flex;
+    flex-direction: column; 
+    gap: 7%;
+}
+
+.contacto__campo{
+    width: 100%;
+    height: 19%;
+    border-radius: 2% 2% 2% 2%;
+    
+
+}
+
+.contacto__campo--textarea{
+    width: 100%;
+    height: 50%;
+    resize: none;
+}
+
+.contacto__boton{
+    width: 25%;
+    height: 11%;
+    background-color: #e4e4e5;
+    color: #005452;
+}
+
+
+
+
+
+
+
+
+
+/*.contacto__boton:hover{
+    background-color: #028785;
+    color: #e4e4e5;
+}
+
+
+
+/*.contacto{
+    width: 100%;
+    height: 100%;
+    background-color: #005452;
+    display: flex;
+    justify-content: center;
+}
+
+.b{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+
+.contacto__imagen{
+    width: 50%;
     height: 593px;
 }
 
 .contacto__titulo{
     color: #e4e4e5;
     font-size: 2rem;
-    padding-top: 1.6%;
 }
 
 .contacto__texto{
@@ -344,15 +447,16 @@ ul{
 }
 
 .contacto__cuadro{
-    background-color: #005452;
-    width: 40%;
+    width: 50%;
     height: 593px;
 }
+
+
 
 .contacto__formulario{
     display: flex;
     flex-direction: column;
-    gap: 32px;   
+    gap: 29.8px;   
 }
 
 .contacto__campo{
@@ -376,7 +480,7 @@ ul{
 .contacto__boton:hover{
     background-color: #028785;
     color: #e4e4e5;
-}
+}*/
 
 /* Pie de pagina */
 
@@ -387,6 +491,7 @@ ul{
     text-align: center;
     padding: 1% 0% 1% 0%;
 }
+
 
 
 /*Responsive para table width max (768)*/
@@ -479,7 +584,7 @@ ul{
     }
 
     .habilidades__icono{
-        padding: 30% 0% 0% 5%;
+        padding: 25% 0% 0% 5%;
     }
 
     .habilidades__nombre{
@@ -503,6 +608,10 @@ ul{
         padding: 25% 0% 0% 5%;
     }
 
+    .aficiones__nombre{
+        padding-left: 5%;
+    }
+
     /* Sección de Formación académica (768) */
 
     .formacion{
@@ -522,9 +631,7 @@ ul{
     }
 
     .formacion__icono{
-        width: 50%;
-        height: 50%;
-        padding: 13% 25% 20% 25%;
+        padding: 5% 25% 5% 25%;
     }
 
     .formacion__texto{
@@ -578,13 +685,29 @@ ul{
 
     /* Sección de Contacto (768) */
 
-    .contacto__imagen{
+    
+    .contacto{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .prueba{
         display: none;
     }
 
+    .b{
+        width: 100%;
+        justify-content: center;
+        background-color: red;
+    }
+    
+
     .contacto__cuadro{
         width: 90%;
+
+        background-color: blue;
     }
+
 
     .contacto__boton{
         width: 20%;
